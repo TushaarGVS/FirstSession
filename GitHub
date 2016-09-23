@@ -1,0 +1,40 @@
+git init to make a directory a repository.
+read files = untracked.
+working areas: untracked work, tracked, commited
+to track = git add.
+green files = tracked.
+git commit -m "Some Message" = commits all the tracked files = saves to current repo.
+git log to check the logs.
+git diff = diff. b/w last untracked and last tracked.
+git reset hashvalue of commit= resets all the commits.
+git reset hard = changes the working directory = removes the current commit only.
+git reset --hard = removes all commits from the current commit.
+git checkout filename.
+
+local and remote/global repos
+Local repo's can inherit from many repos.
+make local and inherit in remote = git remote add origin https://github.com/TushaarGVS/Pro.git
+make repo and inherit in local = use clone
+
+git push -u origin master = to push from local to remote.
+git pull -u origin master = to pull from remote to local.
+
+-u only for the first time as we are are inheriting to an empty repo. 
+
+git clone <url>
+fork any repo and start working with it and send pull requests. 
+
+git branch = commit access to everyone, they can push to the repo.
+git checkout -b <branch_name> = -b: creating new branch.
+
+master = master branch.
+HEAD is the last commit.
+
+git merge: merges the branches with master.
+git rebase: It goes the common commit of the diff. branches and master = best command to create pull requests.
+
+Never work on master branch.
+Travis CI and Appveyor = continuous integration agents.
+Travis = tests your code and checks for various inputs -runs entire code on Linux and Mac OSX and gives result.
+Appveyor = works on windows and gives result.
+
